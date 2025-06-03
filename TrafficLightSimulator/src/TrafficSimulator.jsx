@@ -19,9 +19,9 @@ const TrafficSimulator = () => {
     const base =
       "w-[50px] h-[50px] rounded-full shadow transition-all duration-300";
     const active = {
-      red: "bg-red-500  shadow-lg",
-      yellow: "bg-yellow-400  shadow-lg",
-      green: "bg-green-500  shadow-lg",
+      red: "bg-red-500 shadow-red-500/70 shadow-[0_0_40px_10px]",
+      yellow: "bg-yellow-500 shadow-yellow-500/70 shadow-[0_0_40px_10px]",
+      green: "bg-green-500 shadow-green-500/70 shadow-[0_0_40px_10px]",
     };
     return `${base} ${currentLight === color ? active[color] : "bg-gray-600"}`;
   };
